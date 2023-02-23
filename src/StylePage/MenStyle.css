@@ -1,0 +1,35 @@
+.men_1{
+    display: flex;
+    width: 95%;
+    margin: 1cm auto;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.men_1 > div:nth-child(1){
+    width: 45%;
+    background-color: #191919;
+    padding: 15px;
+    margin: 0 15px 0 0;
+}
+.men_1 > div:nth-child(1) h1{
+    font-size: 35px;
+}
+.men_1 > div:nth-child(1) h5{
+    font-size: 20px;
+}
+.men_1 > div:nth-child(1) p{
+    font-size: 12px;
+}
+.men_1 > div:nth-child(1) > div:nth-child(2){
+    margin-top: 35px;
+}
+.men_1 > div:nth-child(1) > div:nth-child(2) > button{
+    width: 200px;
+    height: 35px;
+    margin: 5px 0;
+    border: 1.3px solid white;
+}
+.men_1 > div:nth-child(1) > div:nth-child(2) > button:hover{
+    background-color: whitesmoke;
+    color: #191919;
+}
