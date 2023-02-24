@@ -1,10 +1,11 @@
 import '../StylePage/HomeStyle.css'
 // import { Button,Input } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function HomePage(){
 return (
-<div>  
+<div>  <Navbar/>
         {/* content_1 */}
         <div className='content_1'>
             <div >
@@ -23,7 +24,7 @@ return (
             </Link>
             </div>
             <div>
-            <Link to={'/MenShoes'}>
+            <Link to={'/WomenShoes'}>
             <img src='https://i.ebayimg.com/images/g/2bIAAOSwnxBj2Loj/s-l400.webp' alt='image1'/>
             </Link>
             </div>

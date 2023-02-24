@@ -1,0 +1,39 @@
+.product_container{
+    width: 80%;
+    margin: 1.5cm auto 0 auto;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+}
+.product_container > div{
+    /* border: 1px solid blue; */
+    padding: 15px;
+}
+.product_container > div:nth-child(1) > p{
+    margin: 15px 0;
+    font-weight: lighter;
+    color: rgb(62, 60, 60);
+    font-size: 12px;
+}
+.product_container > div:nth-child(3) > p{
+    margin: 15px 0;
+    font-weight:normal;
+    color: rgb(62, 60, 60);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.color{
+    display: flex;
+}
+.btn{
+    width: 90%;
+    height: 30px;
+    margin: 10px 0 0 0;
+    border: 1px solid ;
+    background-color: rgba(33, 29, 29, 0.897);
+    color: whitesmoke;
+}
+.btn:hover{
+    color: rgba(17, 16, 16, 0.849);
+    background-color: white;
+}

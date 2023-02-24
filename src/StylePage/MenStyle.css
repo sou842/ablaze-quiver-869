@@ -33,3 +33,28 @@
     background-color: whitesmoke;
     color: #191919;
 }
+/* men_2 */
+
+.men_2{
+    display: flex;
+    width: 95%;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+    height: 98vh;
+}
+.men_22::-webkit-scrollbar{
+    display: none;
+}
+.men_21{
+    width: 25%;
+    /* border: 1px solid blue; */
+}
+.men_22{
+    overflow: scroll;
+}
+.gridProduct{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    text-align: center;
+}

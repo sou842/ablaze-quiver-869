@@ -1,0 +1,8 @@
+.banner{
+    width: 90%;
+    border: 1px solid red;
+}
+.banner > img{
+    width: 100%;
+
+}

@@ -26,7 +26,7 @@ return(
         <div className="men_1">
             <div>
             <div>
-            <h1>Men Sneakers</h1>
+            <h1>Women Sneakers</h1>
             <h5>Take 15% Off!</h5>
             </div>
             <div>

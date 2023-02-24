@@ -1,8 +1,7 @@
-import { Button,Input } from '@chakra-ui/react';
 import '../StylePage/NavStyle.css'
 import { Link } from 'react-router-dom';
 
-export default function Navbar(){
+export default function Navbar_Lite(){
 return (
     <div>
     <div className='navbar'>
@@ -28,26 +27,6 @@ return (
     </div>
     {/* <hr style={{width:'100%',margin:"0px auto 10px auto"}}/> */}
     {/* nav_3 */}
-    <div>
-    <div className='navbar_3'>
-        <Input type={'text'} placeholder='Search For anything'/>
-        <Button colorScheme='messenger' variant='solid'>Search</Button>
-    </div>
-    </div>
-    {/* <hr style={{width:'100%',margin:"15px auto 0px auto"}}/> */}
-    {/* nav_4 */}
-    <div className='navbar_4'>
-        <p>Home</p>
-        <p><Link to={'/Electronic'}>Electronics</Link></p>
-        <p>Motors</p>
-        <p>Fashion</p>
-        <p>Collectibles and Art</p>
-        <p>Sports</p>
-        <p>Health & Beauty</p>
-        <p>Garden</p>
-        <p>Deal</p>
-        <p>Sell</p>
-    </div>
     </div>
 )
 }
