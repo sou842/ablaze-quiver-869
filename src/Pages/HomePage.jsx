@@ -2,6 +2,7 @@ import '../StylePage/HomeStyle.css'
 // import { Button,Input } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer.jsx';
 
 function HomePage(){
 return (
@@ -29,7 +30,7 @@ return (
             </Link>
             </div>
             <div>
-            <Link to={'/MenShoes'}>
+            <Link to={'/Kidshoes'}>
             <img src='https://i.ebayimg.com/images/g/QqoAAOSwsj1j2Loi/s-l400.webp' alt='image1'/>
             </Link>
             </div>
@@ -62,9 +63,11 @@ return (
         <h1>See all →</h1>    
         </div>
         <div className='contact_4'>
-        <div>
+        <div className='effect'>
+            <Link to={'/Shoes'}>
             <img src="https://i.ebayimg.com/thumbs/images/g/9vIAAOSwik9bhdyV/s-l225.webp" alt="1" />
             <p>Shoes</p>
+            </Link>
         </div>
         <div>
             <img src="https://i.ebayimg.com/thumbs/images/g/HQkAAOSwk6dbrPXU/s-l225.webp" alt="2" />
@@ -100,6 +103,18 @@ return (
                 <button>Buy it now →</button>
             </div>
         </div>
+        {/* content_6 */}
+        <div className="content_6">
+        <div>
+        <img src="https://i.ebayimg.com/images/g/DhYAAOSwH99j7e1j/s-l960.webp" alt="Cycle" />
+        </div>
+        <div className='content_6_1'>
+        <h1>Bikes & Cycling <br /> Equipment</h1>
+        <p>Save on bicycles</p>
+        <button>Shop Now →</button>
+        </div>
+        </div>
+        <Footer/>
 </div>
 )
 }

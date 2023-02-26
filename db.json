@@ -1,8 +1,16 @@
 {
-    "cart":[
-        {
-            "name":"sourav",
-            "age":88
-        }
-    ]
+  "account": [
+    {
+      "name": "Sourav Samantas",
+      "email": "saifactplanet@gmail.com",
+      "password": "888",
+      "id": 1
+    },
+    {
+      "name": "Sourav Samantas",
+      "email": "saifactplanet@gmail.com",
+      "password": "123",
+      "id": 2
+    }
+  ]
 }

@@ -3,9 +3,9 @@ import axios from 'axios'
 import '../StylePage/MenStyle.css'
 import Product from './Product'
 import Navbar from './Navbar'
-import { Button,Input } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 
-export default function MenShoes(){
+export default function Shoes(){
 const [data,setData] = useState([]);
 const [sort,setSort] = useState('id');
 const [price,setPrice] = useState(null);
@@ -15,8 +15,9 @@ const [sag,setSag] = useState('catagory');
 const [size,setSize] = useState('menshoes');
 const [page,setPage] = useState(1)
 
+//https://dead-gray-millipede-ring.cyclic.app/shoes?${catg}=${catv}&_sort=${sort}&_order=${price}&${sag}=${size}&_page=${page}&_limit=8
 const getDate = ()=>{
-axios(`https://dead-gray-millipede-ring.cyclic.app/menshoes?${catg}=${catv}&_sort=${sort}&_order=${price}&${sag}=${size}&_page=${page}&_limit=6`)
+axios(`https://dead-gray-millipede-ring.cyclic.app/shoes?_page=${page}&_limit=8`)
 .then((data)=>{
 setData(data.data)
 })
@@ -65,50 +66,11 @@ setPage(num)
 return(
     <div>
         <Navbar/>
-        {/* men_1 */}
-        <div className="men_1">
-            <div>
-            <div>
-            <h1>Men Sneakers</h1>
-            <h5>Take 15% Off!</h5>
-            </div>
-            <div>
-            <p>Click to copy coupon</p>
-            <button>SNEAK23</button>
-            <p>See Terms and Conditions</p>
-            </div>
-            </div>
-            <div>
-            <img src="https://i.ebayimg.com/images/g/kR8AAOSw7RFj4YII/s-l1600.webp" alt="banner"/>
-            </div>
-        </div>
         {/* men_2 */}
         <div className='men_2'>
-            <div className='men_21'>
-            {/* price */}
-            <select onChange={(e)=>handleSort(e.target.value)}>
-            <option value={'sort'}>Price Sort</option>
-            <option value={'asc'}>Low to High</option>
-            <option value={'desc'}>High to Low</option>
-            </select>
-            {/* color */}
-            <select onChange={(e)=>handleColor(e.target.value)}>
-            <option value="color">Color</option>
-            <option value='black'>black</option>
-            <option value='white'>white</option>
-            <option value='yellow'>yellow</option>
-            <option value='blue'>blue</option>
-            </select>
-            {/* size */}
-            <select onChange={(e)=>handleSize(e.target.value)}>
-            <option value="Size">Size</option>
-            <option value={9}>9</option>
-            <option value={8}>8</option>
-            <option value={7}>7</option>
-            </select>
-            </div>
+            
             <div className='men_22'>
-            <div className='gridProduct'>
+            <div style={{gridTemplateColumns:"repeat(4,1fr)"}} className='gridProduct'>
                 {data.map((ele)=>(
                 <Product 
                 key  = {ele.id}
@@ -126,6 +88,7 @@ return(
             <Button colorScheme={'cyan'} margin={7} variant='outline' onClick={()=>handleBtn(1)}>1</Button>
             <Button colorScheme={'cyan'} margin={7} variant='outline' onClick={()=>handleBtn(2)}>2</Button>
             <Button colorScheme={'cyan' }margin={7} variant='outline' onClick={()=>handleBtn(3)}>3</Button>
+            <Button colorScheme={'cyan' }margin={7} variant='outline' onClick={()=>handleBtn(4)}>4</Button>
             </center>
             </div>
         </div>

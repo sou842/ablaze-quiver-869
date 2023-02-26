@@ -58,3 +58,13 @@
     gap: 15px;
     text-align: center;
 }
+.men_21 > select{
+    width: 90%;
+    margin: 1cm 0 25px 0;
+    border-bottom: 1px solid;
+    border-left: 1px solid ;
+    border-radius: 10px;
+}
+.men_21 option{
+    color: black;
+}

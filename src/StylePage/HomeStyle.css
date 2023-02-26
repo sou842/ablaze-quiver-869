@@ -90,6 +90,16 @@ body::-webkit-scrollbar{
     justify-content: space-around;
     /* border: 1px solid red; */
 }
+.effect{
+    width: 130px;
+    border-radius: 50%;
+    text-align: center;
+}
+.effect  img{
+    width: 130px;
+    border-radius: 50%;
+    text-align: center;
+}
 .contact_4 > div > img{
     width: 130px;
     border-radius: 50%;
@@ -122,4 +132,37 @@ body::-webkit-scrollbar{
 .content_5 > div:nth-child(2) > button:hover{
     background-color: #511811;
     color: rgb(231, 235, 10);
+}
+.content_6{
+    width: 85%;
+    margin: 1cm auto 2cm auto;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.content_6  > div:nth-child(1){
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-top: 0.8cm;
+}
+.content_6_1{
+    width: 50%;
+    /* background-color: #1DCBCA; */
+    padding: 20px;
+}
+.content_6_1 > h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.content_6_1 > p{
+    margin: 0 10px;
+}
+.content_6_1 > button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid;
+    margin: 10px 0 0 0;
+}
+.content_6_1 > button:hover{
+    background-color: rgba(35, 35, 38, 0.925);
+    color: white;
 }

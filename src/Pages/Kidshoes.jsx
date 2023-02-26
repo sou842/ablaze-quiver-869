@@ -5,18 +5,18 @@ import Product from './Product'
 import Navbar from './Navbar'
 import { Button,Input } from '@chakra-ui/react';
 
-export default function MenShoes(){
+export default function Kidshoes(){
 const [data,setData] = useState([]);
 const [sort,setSort] = useState('id');
 const [price,setPrice] = useState(null);
 const [catg,setCatg ] = useState('catagory');
-const [catv,setCatv] = useState('menshoes');
+const [catv,setCatv] = useState('kidshoes');
 const [sag,setSag] = useState('catagory');
-const [size,setSize] = useState('menshoes');
+const [size,setSize] = useState('kidshoes');
 const [page,setPage] = useState(1)
 
 const getDate = ()=>{
-axios(`https://dead-gray-millipede-ring.cyclic.app/menshoes?${catg}=${catv}&_sort=${sort}&_order=${price}&${sag}=${size}&_page=${page}&_limit=6`)
+axios(`https://dead-gray-millipede-ring.cyclic.app/kidshoes?${catg}=${catv}&_sort=${sort}&_order=${price}&${sag}=${size}&_page=${page}&_limit=6`)
 .then((data)=>{
 setData(data.data)
 })
@@ -40,7 +40,7 @@ setPrice(e)
 const handleColor = (e)=>{
 if(e=='color'){
 setCatg('catagory')
-setCatv('menshoes')
+setCatv('kidshoes')
 }
 else{
 setCatg('color')
@@ -51,7 +51,7 @@ setCatv(e)
 const handleSize = (e)=>{
 if(e=='Size'){
 setSag('catagory')
-setSize('menshoes')
+setSize('kidshoes')
 }
 else{
 setSag('size')
@@ -62,6 +62,7 @@ setSize(e)
 const handleBtn = (num) =>{
 setPage(num)
 }
+
 return(
     <div>
         <Navbar/>
@@ -132,4 +133,3 @@ return(
     </div>
 )
 }
-//https://dead-gray-millipede-ring.cyclic.app/user

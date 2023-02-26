@@ -1,0 +1,30 @@
+.profile{
+    width: 70%;
+    margin: 1.2cm auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile > div h1{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.profile > div p{
+    font-size: 17px;
+    font-weight: lighter;
+}
+.profile > div button{
+    border: 1.2px solid teal;
+    width: 200px;
+    margin: 20px 0 0 0;
+    background-color: teal;
+    color: white;
+    height: 40px;
+}
+.profile > div button:hover{
+    background-color: white;
+    color: teal;
+}

@@ -1,0 +1,71 @@
+.checkoutpage{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 1cm auto;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.checkoutpage >  div > h1{
+    margin: 0 0 15px 0;
+    font-size: 35px;
+    color: #353232;
+    font-weight: bold;
+}
+.checkoutpage >  div > h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.checkoutpage >  div > h2 > i{
+    color: red;
+
+}
+.checkoutpage > div{
+    /* border: 1px solid blue; */
+    width: 35%;
+    padding: 10px;
+}
+.checkoutpage input{
+    width: 100%;
+    margin: 15px 0 0 0;
+    border-bottom: 1px solid rgb(29, 27, 27);
+    padding: 3px;
+    
+}
+.checkoutpage select{
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #353232;
+    border-bottom: 1px solid rgb(29, 27, 27);
+    border: 0 1px 1px 1px 1px;
+
+}
+.towins{
+    display: flex;
+}
+.towins > input{
+    margin: 15px 5px;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.cards > img{
+    width: 30px;
+    margin: 0 2px;
+}
+.order{
+    width: 100%;
+    height: 40px;
+    margin: 1cm 0;
+    color: white;
+    background-color: rgb(48, 165, 79);
+}
+.order:hover{
+    border: 1px solid black;
+    background-color: white;
+    /* color: rgb(48, 165, 79); */
+    color: black;
+}

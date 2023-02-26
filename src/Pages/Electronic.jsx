@@ -1,7 +1,7 @@
 import '../StylePage/ElectronicStyle.css'
 import Navbar from '../Pages/Navbar.jsx'
 import backGround from '../Video/backGround.mp4'
-
+import Footer from '../Pages/Footer.jsx'
 export default function Electronic(){
 return(
     <div>
@@ -64,8 +64,47 @@ return(
         </div>
         </div>
     </div>
-
-
+    {/* bottom */}
+    <div className="bottom">
+    <div>
+    <img src="https://i.ebayimg.com/thumbs/images/g/YcwAAOSwmnFeBkB6/s-l960.webp" alt="bottom" />
+    </div>
+    <div className='bottom_1'>
+    <h1>Take Out the old</h1>
+    <p>Put the new</p>
+    <button>Start Saveing →</button>
+    </div>
+    </div>
+    {/* bottom_2 */}
+    <div className="bottom_2">
+    <h1 className='heading_lite'>Shop the Latest Apple AirPods and Headsets</h1>
+    <div className='catagorys'>
+        <div className="item">
+            <img src="https://i.ebayimg.com/thumbs/images/g/4UkAAOSwHwlePBHz/s-l225.webp" alt="phone" />
+            <p>Apple AirPods 2</p>
+        </div>
+        <div className="item">
+            <img src="https://i.ebayimg.com/thumbs/images/g/7c8AAOSwBQ1eNsm~/s-l225.webp" alt="phone" />
+            <p>Apple AirPods Pro</p>
+        </div>
+        <div className="item">
+            <img src="https://i.ebayimg.com/thumbs/images/g/GQ4AAOSwgUdhcJ2b/s-l225.webp" alt="phone" />
+            <p>Apple AirPods Max</p>
+        </div>
+        <div className="item">
+            <img src="https://i.ebayimg.com/thumbs/images/g/0aYAAOSw4T5XHhUq/s-l225.webp" alt="phone" />
+            <p>Apple HeadSet</p>
+        </div>
+        <div className="item">
+            <img src="https://i.ebayimg.com/thumbs/images/g/5N8AAOSwAmNfFlYs/s-l225.webp" alt="phone" />
+            <p>Apple AirPods</p>
+        </div>
+    </div>
+    </div>
+    <div className='banner_2'>
+    <img src="https://i.ebayimg.com/thumbs/images/g/CDAAAOSwBZJjEl5M/s-l1200.webp" alt="" />
+    </div>
+    <Footer/>
     </div>
 )
 }

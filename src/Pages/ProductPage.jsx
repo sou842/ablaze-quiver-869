@@ -2,6 +2,7 @@ import Navbar_Lite from '../Pages/Navbar_Lite'
 import { useParams } from 'react-router-dom'
 import {useState,useEffect,useContext} from 'react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import '../StylePage/ProductPageStyle.css'
 import {AuthorContext} from '../AuthContext/AuthorContextProvider';
 
@@ -80,7 +81,9 @@ return (
         <p>SIZE - 
         <i> {ele.size} </i>
         </p>
+        <Link to={`/CheckOut/${ele.price}`}>
         <button className='btn'>BUY</button>
+        </Link>
         <button onClick={()=>handleCart(ele)} className='btn'>{flag}</button>
     </div>
     )}
