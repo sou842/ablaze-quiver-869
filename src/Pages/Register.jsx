@@ -8,34 +8,24 @@ const [name,setName] = useState('');
 const [ email,setEmail] = useState('');
 const [password,setPassword] = useState('');
 
-const hahdleClick = ()=>{
-// let data = {
-//     email: "ss.gmail.com",
-//     password: "hello",
-//     name: "Sourav Samanta"
-// }
-// console.log("login")
-// fetch(`http://localhost:8080/`,{
-//     method: 'POST',
-//     headers:{
-//         'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(data)
-// })
+let obj = {
+    name : name,
+    email : email,
+    password : password
+}
 
-axios({
-    method: 'post',
-    url: `https://dead-gray-millipede-ring.cyclic.app/account`,
-    data: {
-    title: "text",
-    status: "false",
+const hahdleClick = ()=>{
+
+
+
+
 }
-})
-}
+
+//https://jsondadakijai.onrender.com/account
 
 return (
     <div>
-        <Navbar_Lite/>
+    <Navbar_Lite/>
     <div className='content'>
     <h1>REGISTER</h1>
     <input className='inputs' onChange={(e)=>setName(e.target.value)} type='text' placeholder='Enter Your Name'/> <br />
@@ -47,3 +37,11 @@ return (
     </div>
 )
 }
+
+
+
+
+// axios
+//       .post("http://localhost:3000/signin", {
+//         ...state,cart:[]
+//       })

@@ -8,9 +8,9 @@ export default function MenShoes(){
 const [data,setData] = useState([])
 
 const getDate = ()=>{
-axios(`https://dead-gray-millipede-ring.cyclic.app/user`)
+axios(`https://dead-gray-millipede-ring.cyclic.app/menshoes`)
 .then((data)=>{
-setData(data.data.menshoes)
+setData(data.data)
 // console.log(data.data.menshoes)
 })
 }
@@ -26,7 +26,7 @@ return(
         <div className="men_1">
             <div>
             <div>
-            <h1>Women Sneakers</h1>
+            <h1>Womwn Sneakers</h1>
             <h5>Take 15% Off!</h5>
             </div>
             <div>

@@ -8,9 +8,9 @@ export default function MenShoes(){
 const [data,setData] = useState([])
 
 const getDate = ()=>{
-axios(`https://dead-gray-millipede-ring.cyclic.app/user`)
+axios(`https://dead-gray-millipede-ring.cyclic.app/menshoes`)
 .then((data)=>{
-setData(data.data.menshoes)
+setData(data.data)
 // console.log(data.data.menshoes)
 })
 }

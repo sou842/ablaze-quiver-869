@@ -1,0 +1,30 @@
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Gridstyleing{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    margin: 1cm auto 15px auto;
+    page-break-after: 10px;
+    text-align: center;
+    gap: 15px;
+}
+.checkout{
+    border: 1px solid black;
+    width: 120px;
+    height: 40px;
+    margin-right: 1cm;
+}
+.checkout:hover{
+    background-color: black;
+    color: whitesmoke;
+}

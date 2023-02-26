@@ -6,6 +6,8 @@ import WomenShoes from "../Pages/WomenShoes";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import ProductPage from "../Pages/ProductPage";
+import CartPage from "../Pages/CartPage";
+import CheckOut from "../Pages/CheckOut";
 
 export default function AllRoutes(){
 return (
@@ -17,6 +19,8 @@ return (
         <Route path="/Login" element={<Login></Login>}></Route>
         <Route path='/Register' element={<Register></Register>}></Route>
         <Route path='/menShoes/:catagory' element={<ProductPage></ProductPage>}></Route>
+        <Route path='/CartPage' element={<CartPage></CartPage>}></Route>
+        <Route path='CheckOut/:payment' element={<CheckOut></CheckOut>}></Route>
     </Routes>
 )
 }

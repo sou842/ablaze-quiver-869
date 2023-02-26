@@ -15,7 +15,7 @@
     color: rgb(62, 60, 60);
     font-size: 12px;
 }
-.product_container > div:nth-child(3) > p{
+.third p{
     margin: 15px 0;
     font-weight:normal;
     color: rgb(62, 60, 60);
@@ -24,6 +24,8 @@
 }
 .color{
     display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
 }
 .btn{
     width: 90%;
